@@ -13,7 +13,7 @@ function RandomForm() {
 
   const generateQuote = async () => {
     try {
-      let category = 'happiness';
+      const category = 'happiness';
       setLoading(true);
       const response = await axios.get(`${baseURL}${category}`, config);
       const data = await response.data;
